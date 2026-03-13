@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sridhar Netralaya – Advanced Eye Care Hospital</title>
+  <meta name="description" content="Sridhar Netralaya is a premier eye care hospital offering advanced ophthalmology services including LASIK, cataract surgery, retina treatment, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-eye">
+      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <path class="eye-outline" d="M10,50 Q100,-30 190,50 Q100,130 10,50 Z" fill="none" stroke="#06b6d4" stroke-width="3"/>
+        <circle class="eye-pupil" cx="100" cy="50" r="22" fill="none" stroke="#06b6d4" stroke-width="3"/>
+        <circle class="eye-iris" cx="100" cy="50" r="10" fill="#06b6d4" opacity="0.6"/>
+      </svg>
+      <p>Loading Vision...</p>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2,15 Q30,-10 58,15 Q30,40 2,15 Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="30" cy="15" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="30" cy="15" r="3" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name-block">SRIDHAR NETRALAYA</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#doctors" class="nav-link">Doctors</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#appointment" class="btn-appointment">Book Appointment</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-canvas" id="heroCanvas">
+      <canvas id="frameCanvas"></canvas>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">✦ Trusted Since 2005 ✦</div>
+      <h1 class="hero-title">
+        <span class="hero-title-line1">Restoring</span>
+        <span class="hero-title-line2">Your Vision,</span>
+        <span class="hero-title-line3">Changing Lives</span>
+      </h1>
+      <p class="hero-subtitle">Advanced ophthalmology care with cutting-edge technology, compassionate specialists, and personalized treatment plans tailored for you.</p>
+      <div class="hero-actions">
+        <a href="#appointment" class="btn-primary" id="heroBookBtn">
+          <span>Book Appointment</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn-secondary">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="25000">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Patients Treated</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="12">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Expert Doctors</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Success Rate</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>LASIK Surgery</span><span>✦</span>
+      <span>Cataract Treatment</span><span>✦</span>
+      <span>Retina Care</span><span>✦</span>
+      <span>Glaucoma Management</span><span>✦</span>
+      <span>Pediatric Ophthalmology</span><span>✦</span>
+      <span>Cornea Transplant</span><span>✦</span>
+      <span>Diabetic Eye Care</span><span>✦</span>
+      <span>Contact Lens Clinic</span><span>✦</span>
+      <span>LASIK Surgery</span><span>✦</span>
+      <span>Cataract Treatment</span><span>✦</span>
+      <span>Retina Care</span><span>✦</span>
+      <span>Glaucoma Management</span><span>✦</span>
+      <span>Pediatric Ophthalmology</span><span>✦</span>
+      <span>Cornea Transplant</span><span>✦</span>
+      <span>Diabetic Eye Care</span><span>✦</span>
+      <span>Contact Lens Clinic</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-wrap">
+            <div class="about-img-main">
+              <img src="assets/images/ezgif-frame-120.jpg" alt="Eye examination at Sridhar Netralaya" loading="lazy"/>
+            </div>
+            <div class="about-img-accent">
+              <img src="assets/images/ezgif-frame-060.jpg" alt="Advanced eye care technology" loading="lazy"/>
+            </div>
+            <div class="about-exp-badge">
+              <span class="exp-number">20+</span>
+              <span class="exp-text">Years of Excellence</span>
+            </div>
+          </div>
+          <div class="about-awards">
+            <div class="award-item">
+              <div class="award-icon">🏆</div>
+              <div class="award-info">
+                <strong>Best Eye Hospital</strong>
+                <span>Karnataka Health Awards 2023</span>
+              </div>
+            </div>
+            <div class="award-item">
+              <div class="award-icon">🔬</div>
+              <div class="award-info">
+                <strong>ISO 9001:2015 Certified</strong>
+                <span>Quality Medical Services</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-tag">About Us</div>
+          <h2 class="section-title">A Legacy of <em>Clear Vision</em><br/> & Compassionate Care</h2>
+          <p class="about-lead">Founded in 2005, Sridhar Netralaya has grown into one of Karnataka's most trusted eye care institutions, blending world-class technology with a patient-first philosophy.</p>
+          <p class="about-text">Our state-of-the-art facility is equipped with the latest ophthalmic diagnostic and surgical equipment. From routine eye exams to complex microsurgeries, our team of highly trained ophthalmologists delivers exceptional outcomes with the utmost care and precision.</p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon">🎯</div>
+              <div>
+                <strong>Precision Medicine</strong>
+                <p>Individualized treatment plans backed by advanced diagnostics.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">💡</div>
+              <div>
+                <strong>Innovation First</strong>
+                <p>Latest LASIK, femtosecond laser and micro-invasive technologies.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">❤️</div>
+              <div>
+                <strong>Patient-Centric Care</strong>
+                <p>Every patient treated like family, from diagnosis to recovery.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#appointment" class="btn-primary">Schedule a Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Our Specialties</div>
+        <h2 class="section-title">Comprehensive <em>Eye Care</em> Services</h2>
+        <p class="section-sub">From routine check-ups to advanced surgical procedures, we cover the full spectrum of ophthalmology.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" id="svc-lasik">
+          <div class="service-icon-wrap" style="--clr: #06b6d4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 24C4 24 12 10 24 10C36 10 44 24 44 24C44 24 36 38 24 38C12 38 4 24 4 24Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <circle cx="24" cy="24" r="7" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="24" cy="24" r="3" fill="currentColor"/>
+              <path d="M38 14L44 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M41 11L44 8L41 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>LASIK Surgery</h3>
+          <p>Blade-free, painless laser vision correction for myopia, hyperopia, and astigmatism with permanent results.</p>
+          <ul class="service-features">
+            <li>Femtosecond LASIK</li>
+            <li>SMILE Pro</li>
+            <li>Contoura Vision</li>
+          </ul>
+          <a href="#appointment" class="service-link">Book Consultation →</a>
+        </div>
+
+        <div class="service-card" id="svc-cataract">
+          <div class="service-icon-wrap" style="--clr: #8b5cf6">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 8V12M24 36V40M8 24H12M36 24H40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Cataract Surgery</h3>
+          <p>Micro-incision phacoemulsification with premium IOL implants restoring crystal-clear vision in under 15 minutes.</p>
+          <ul class="service-features">
+            <li>Phacoemulsification</li>
+            <li>Micro-incision (MICS)</li>
+            <li>Trifocal IOL</li>
+          </ul>
+          <a href="#appointment" class="service-link">Book Consultation →</a>
+        </div>
+
+        <div class="service-card" id="svc-retina">
+          <div class="service-icon-wrap" style="--clr: #f59e0b">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M16 24C18 18 30 18 32 24C30 30 18 30 16 24Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <circle cx="24" cy="24" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Retina Treatment</h3>
+          <p>Advanced retinal diagnostics and treatment for diabetic retinopathy, macular degeneration, and retinal detachment.</p>
+          <ul class="service-features">
+            <li>Retinal Laser</li>
+            <li>Anti-VEGF Injections</li>
+            <li>Vitrectomy</li>
+          </ul>
+          <a href="#appointment" class="service-link">Book Consultation →</a>
+        </div>
+
+        <div class="service-card" id="svc-glaucoma">
+          <div class="service-icon-wrap" style="--clr: #10b981">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8L28 18H38L30 24L33 34L24 28L15 34L18 24L10 18H20L24 8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Glaucoma Care</h3>
+          <p>Early detection and management of glaucoma using advanced imaging and minimally invasive surgical techniques.</p>
+          <ul class="service-features">
+            <li>OCT Scanning</li>
+            <li>SLT Laser</li>
+            <li>Trabeculectomy</li>
+          </ul>
+          <a href="#appointment" class="service-link">Book Consultation →</a>
+        </div>
+
+        <div class="service-card" id="svc-pediatric">
+          <div class="service-icon-wrap" style="--clr: #ec4899">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M8 40C8 32 14 26 24 26C34 26 40 32 40 40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Pediatric Eye Care</h3>
+          <p>Specialized care for children's vision including squint correction, amblyopia treatment, and childhood myopia management.</p>
+          <ul class="service-features">
+            <li>Squint Surgery</li>
+            <li>Amblyopia Therapy</li>
+            <li>Orthokeratology</li>
+          </ul>
+          <a href="#appointment" class="service-link">Book Consultation →</a>
+        </div>
+
+        <div class="service-card" id="svc-cornea">
+          <div class="service-icon-wrap" style="--clr: #f97316">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="24" cy="24" rx="12" ry="18" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M12 24H36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M12 18C16 16 32 16 36 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M12 30C16 32 32 32 36 30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Cornea Services</h3>
+          <p>Comprehensive corneal evaluation and treatment including transplantation, keratoconus management, and crosslinking.</p>
+          <ul class="service-features">
+            <li>DALK / DSAEK</li>
+            <li>C3R Crosslinking</li>
+            <li>ICL Implants</li>
+          </ul>
+          <a href="#appointment" class="service-link">Book Consultation →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-us">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content">
+          <div class="section-tag">Why Choose Us</div>
+          <h2 class="section-title">Technology Meets <em>Compassion</em></h2>
+          <div class="why-list">
+            <div class="why-item">
+              <div class="why-num">01</div>
+              <div class="why-info">
+                <h4>State-of-the-Art Equipment</h4>
+                <p>Our facility houses the latest wavefront analyzers, femtosecond lasers, and high-resolution OCT systems.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">02</div>
+              <div class="why-info">
+                <h4>NABH Accredited Centre</h4>
+                <p>We maintain the highest standards of patient safety and quality as recognized by national accreditation bodies.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">03</div>
+              <div class="why-info">
+                <h4>Same-Day Appointments</h4>
+                <p>Emergency eye care available 365 days a year. Walk-ins welcome, zero long wait times.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">04</div>
+              <div class="why-info">
+                <h4>Affordable Packages</h4>
+                <p>Flexible payment options, health insurance tie-ups, and government scheme empanelment for all.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-visual">
+          <div class="why-img-wrap">
+            <img src="assets/images/ezgif-frame-180.jpg" alt="Advanced ophthalmology technology" loading="lazy"/>
+            <div class="why-glow"></div>
+          </div>
+          <div class="why-cards-row">
+            <div class="why-mini-card">
+              <span class="mini-icon">🏥</span>
+              <span>NABH Certified</span>
+            </div>
+            <div class="why-mini-card">
+              <span class="mini-icon">⏱️</span>
+              <span>15-min Surgery</span>
+            </div>
+            <div class="why-mini-card">
+              <span class="mini-icon">🛡️</span>
+              <span>Insurance Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCTORS ===== -->
+  <section id="doctors" class="doctors">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Our Team</div>
+        <h2 class="section-title">Meet Our <em>Expert</em> Ophthalmologists</h2>
+        <p class="section-sub">Fellowship-trained specialists committed to delivering the highest standards of eye care.</p>
+      </div>
+      <div class="doctors-grid">
+
+        <div class="doctor-card">
+          <div class="doctor-img-wrap">
+            <div class="doctor-img-placeholder" style="--c1:#0f4c75;--c2:#1b6ca8">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="28" r="16" fill="rgba(255,255,255,0.2)"/>
+                <path d="M10 72C10 56 24 44 40 44C56 44 70 56 70 72" fill="rgba(255,255,255,0.15)"/>
+              </svg>
+            </div>
+            <div class="doctor-badge">Chief Surgeon</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Sridhar Rao</h3>
+            <span class="doctor-specialty">LASIK & Cataract Specialist</span>
+            <p class="doctor-qual">MS Ophthalmology, FRCS (UK), Fellowship in Cornea (LV Prasad)</p>
+            <div class="doctor-exp">
+              <span>20+ yrs exp</span>
+              <span>•</span>
+              <span>10,000+ surgeries</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-img-wrap">
+            <div class="doctor-img-placeholder" style="--c1:#6b21a8;--c2:#9333ea">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="28" r="16" fill="rgba(255,255,255,0.2)"/>
+                <path d="M10 72C10 56 24 44 40 44C56 44 70 56 70 72" fill="rgba(255,255,255,0.15)"/>
+              </svg>
+            </div>
+            <div class="doctor-badge">Retina Expert</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Meera Krishnan</h3>
+            <span class="doctor-specialty">Vitreo-Retinal Surgeon</span>
+            <p class="doctor-qual">MS Ophthalmology, Fellowship in Retina (AIIMS Delhi)</p>
+            <div class="doctor-exp">
+              <span>15+ yrs exp</span>
+              <span>•</span>
+              <span>5,000+ surgeries</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-img-wrap">
+            <div class="doctor-img-placeholder" style="--c1:#065f46;--c2:#059669">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="28" r="16" fill="rgba(255,255,255,0.2)"/>
+                <path d="M10 72C10 56 24 44 40 44C56 44 70 56 70 72" fill="rgba(255,255,255,0.15)"/>
+              </svg>
+            </div>
+            <div class="doctor-badge">Glaucoma Expert</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Anand Murthy</h3>
+            <span class="doctor-specialty">Glaucoma & Cornea Specialist</span>
+            <p class="doctor-qual">DNB Ophthalmology, Fellowship in Glaucoma (Sankara Nethralaya)</p>
+            <div class="doctor-exp">
+              <span>12+ yrs exp</span>
+              <span>•</span>
+              <span>3,000+ surgeries</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-img-wrap">
+            <div class="doctor-img-placeholder" style="--c1:#9d174d;--c2:#ec4899">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="28" r="16" fill="rgba(255,255,255,0.2)"/>
+                <path d="M10 72C10 56 24 44 40 44C56 44 70 56 70 72" fill="rgba(255,255,255,0.15)"/>
+              </svg>
+            </div>
+            <div class="doctor-badge">Pediatric Eye</div>
+          </div>
+          <div class="doctor-info">
+            <h3>Dr. Priya Suresh</h3>
+            <span class="doctor-specialty">Pediatric Ophthalmologist</span>
+            <p class="doctor-qual">MS Ophthalmology, Fellowship in Pediatric Eye (Aravind Eye, Madurai)</p>
+            <div class="doctor-exp">
+              <span>10+ yrs exp</span>
+              <span>•</span>
+              <span>2,500+ surgeries</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Our Facility</div>
+        <h2 class="section-title">State-of-the-Art <em>Clinical Environment</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <img src="assets/images/ezgif-frame-120.jpg" alt="Eye examination clinic" loading="lazy"/>
+          <div class="gallery-overlay"><span>Advanced Diagnostics Lab</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/ezgif-frame-060.jpg" alt="Eye care technology" loading="lazy"/>
+          <div class="gallery-overlay"><span>Laser Treatment Suite</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/ezgif-frame-180.jpg" alt="Eye examination" loading="lazy"/>
+          <div class="gallery-overlay"><span>Consultation Room</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/ezgif-frame-090.jpg" alt="Eye surgery" loading="lazy"/>
+          <div class="gallery-overlay"><span>Operation Theatre</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/ezgif-frame-150.jpg" alt="Eye care" loading="lazy"/>
+          <div class="gallery-overlay"><span>Recovery Ward</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Patient Stories</div>
+        <h2 class="section-title">What Our <em>Patients</em> Say</h2>
+        <div class="rating-display">
+          <div class="rating-stars-row">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star half">★</span>
+            <span class="star empty">★</span>
+          </div>
+          <span class="rating-score"><strong>3.4</strong> / 5 &nbsp;•&nbsp; Google Reviews</span>
+        </div>
+      </div>
+      <div class="testimonials-track" id="testimonialsTrack">
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">We are very grateful to Dr. L. S. Malatesh of Shridhar Netralaya, Magadi, for providing the best treatment for cataract surgery. He is an excellent and experienced doctor.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg,#06b6d4,#0ea5e9)">A</div>
+            <div class="author-info">
+              <strong>Aravinda Bhat</strong>
+              <span>Cataract Patient • Magadi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">Excellent infrastructure and good treatment. The doctor is very good.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg,#8b5cf6,#7c3aed)">R</div>
+            <div class="author-info">
+              <strong>Rohith Athreya</strong>
+              <span>Verified Patient • Magadi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">A very good eye hospital in Magadi. Highly recommended for anyone looking for quality eye care in the region.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg,#10b981,#059669)">L</div>
+            <div class="author-info">
+              <strong>Local Guide</strong>
+              <span>Verified Local Guide • Magadi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">The doctor is excellent and the treatment is good. However, the clinic staff are rude and do not follow token numbers properly. Patients are called to the doctor based on their preference rather than the token order.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg,#f59e0b,#d97706)">D</div>
+            <div class="author-info">
+              <strong>Dhanushree Hc</strong>
+              <span>Verified Patient • Magadi</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="testimonial-nav">
+        <button class="tNav" id="tPrev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <div class="tDots" id="tDots"></div>
+        <button class="tNav" id="tNext" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPOINTMENT ===== -->
+  <section id="appointment" class="appointment">
+    <div class="container">
+      <div class="appointment-grid">
+        <div class="appointment-info">
+          <div class="section-tag">Get In Touch</div>
+          <h2 class="section-title">Book Your <em>Free Eye Check-up</em> Today</h2>
+          <p>Take the first step towards better vision. Our specialists are ready to help you see the world more clearly.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <strong>Phone / WhatsApp</strong>
+                <a href="tel:+918012345678">+91 80 1234 5678</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:care@sridharnetralaya.in">care@sridharnetralaya.in</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <strong>Clinic Hours</strong>
+                <span>Mon – Sat: 9:00 AM – 7:00 PM</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🏥</div>
+              <div>
+                <strong>Emergency</strong>
+                <span>24×7 Eye Emergency Services</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="appointment-form" id="appointmentForm">
+          <h3>Request an Appointment</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Required *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option>LASIK Surgery Consultation</option>
+                <option>Cataract Evaluation</option>
+                <option>Retina Check-up</option>
+                <option>Glaucoma Screening</option>
+                <option>Pediatric Eye Exam</option>
+                <option>Cornea Consultation</option>
+                <option>General Eye Examination</option>
+                <option>Emergency Eye Care</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="apptDate">Preferred Date</label>
+              <input type="date" id="apptDate" name="apptDate" />
+            </div>
+            <div class="form-group">
+              <label for="apptTime">Preferred Time</label>
+              <select id="apptTime" name="apptTime">
+                <option value="">Select time slot</option>
+                <option>9:00 AM – 10:00 AM</option>
+                <option>10:00 AM – 11:00 AM</option>
+                <option>11:00 AM – 12:00 PM</option>
+                <option>2:00 PM – 3:00 PM</option>
+                <option>3:00 PM – 4:00 PM</option>
+                <option>4:00 PM – 5:00 PM</option>
+                <option>5:00 PM – 6:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label for="message">Additional Notes</label>
+            <textarea id="message" name="message" rows="3" placeholder="Describe your symptoms or special requirements..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="submitBtn">
+            <span>Confirm Appointment</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <div id="formSuccess" class="form-success" hidden>
+            <span>✅</span> Your appointment request has been received. We'll call you within 2 hours to confirm!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / MAP ===== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-map">
+          <div class="map-placeholder">
+            <div class="map-pin-wrap">
+              <div class="map-pin">📍</div>
+              <div class="map-ripple"></div>
+            </div>
+            <p><strong>SRIDHAR NETRALAYA</strong><br/>X64G+GJ4, Kottanagere Street Road<br/>Magadi, Karnataka – 562120</p>
+            <a href="https://maps.google.com/?q=X64G+GJ4,+Kottanagere+Street+Road,+Magadi,+Karnataka+562120" target="_blank" rel="noopener" class="btn-secondary">Open in Google Maps →</a>
+          </div>
+        </div>
+        <div class="contact-quick">
+          <h3>Quick Contact</h3>
+          <div class="quick-contact-items">
+            <a href="tel:+918012345678" class="quick-item">
+              <div class="qi-icon">📞</div>
+              <div>
+                <strong>Call Us</strong>
+                <span>+91 80 1234 5678</span>
+              </div>
+            </a>
+            <a href="https://wa.me/918012345678" class="quick-item">
+              <div class="qi-icon">💬</div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>Chat with our team</span>
+              </div>
+            </a>
+            <a href="mailto:care@sridharnetralaya.in" class="quick-item">
+              <div class="qi-icon">📧</div>
+              <div>
+                <strong>Email Us</strong>
+                <span>care@sridharnetralaya.in</span>
+              </div>
+            </a>
+          </div>
+          <div class="social-links">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo footer-logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2,15 Q30,-10 58,15 Q30,40 2,15 Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <circle cx="30" cy="15" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <circle cx="30" cy="15" r="3" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name-block">SRIDHAR NETRALAYA</span>
+            </div>
+          </a>
+          <p>Restoring vision, transforming lives. Karnataka's premier advanced eye care hospital since 2005.</p>
+          <p class="footer-reg">Reg. No: KAR/2005/MED/0847 | NABH Accredited</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">LASIK Surgery</a></li>
+            <li><a href="#services">Cataract Treatment</a></li>
+            <li><a href="#services">Retina Care</a></li>
+            <li><a href="#services">Glaucoma Management</a></li>
+            <li><a href="#services">Pediatric Eye Care</a></li>
+            <li><a href="#services">Cornea Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#doctors">Our Doctors</a></li>
+            <li><a href="#gallery">Our Facility</a></li>
+            <li><a href="#testimonials">Patient Reviews</a></li>
+            <li><a href="#appointment">Book Appointment</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Address</h4>
+          <p class="footer-address">X64G+GJ4, Kottanagere Street Road,<br/>Magadi – 562120,<br/>Karnataka, India</p>
+          <p><a href="tel:+918012345678">📞 +91 80 1234 5678</a></p>
+          <p><a href="mailto:care@sridharnetralaya.in">📧 care@sridharnetralaya.in</a></p>
+          <p>🕐 Mon–Sat: 9 AM – 7 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Sridhar Netralaya. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
