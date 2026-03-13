@@ -1,0 +1,3 @@
+# Exclude the zip file - too large for GitHub
+*.zip
+assets/
