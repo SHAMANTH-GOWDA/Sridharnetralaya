@@ -1,3 +1,2 @@
-# Exclude the zip file - too large for GitHub
+# Exclude the zip file only - allow images
 *.zip
-assets/
